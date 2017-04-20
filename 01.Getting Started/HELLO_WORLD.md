@@ -43,8 +43,8 @@ This folder contains our views. Views contain our templates for the frontend.
 
 ## Make it say hello world
 Let's snoop around our folders. If we go to views and open the file index.hbs we will see the following
-    <h1>{{title}}</h1>
-    <p>Welcome to {{title}}</p>
+    ```<h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>```
 We should be familiar with the html tags. The double curly braces are part of the Handlebars syntax. It's saying to use the title. Lets go and look in our routes folder at index.js.
     var express = require('express');
     var router = express.Router();
