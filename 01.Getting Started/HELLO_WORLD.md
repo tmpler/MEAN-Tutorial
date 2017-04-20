@@ -40,3 +40,43 @@ This folder contains our routes. Routes are for mapping URL requests to controll
 
 ### views
 This folder contains our views. Views contain our templates for the frontend.
+
+## Make it say hello world
+Let's snoop around our folders. If we go to views and open the file index.hbs we will see the following
+    <h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+We should be familiar with the html tags. The double curly braces are part of the Handlebars syntax. It's saying to use the title. Lets go and look in our routes folder at index.js.
+    var express = require('express');
+    var router = express.Router();
+
+    /* GET home page. */
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Express' });
+    });
+
+    module.exports = router;
+Ignoring almost everything here, we can see a JSON object contained within the get method of the router. This has the key `title` and the value `'Express'` which is what replaces the `{{title}}` in our hbs template.
+Lets change it to say 'Hello World'.
+    var express = require('express');
+    var router = express.Router();
+
+    /* GET home page. */
+    router.get('/', function(req, res, next) {
+      res.render('index', { title: 'Hello World' });
+    });
+
+    module.exports = router;
+If you didn't stop the application from running press Ctrl+C to stop the node process.
+Now rerun npm start and refresh your browser tab with the page open. You'll see that the word 'Express' has been replaced with 'Hello World'. This has also changed in the browser tab. The <title> tag of the html page has also changed. But this wasn't in index.hbs. Lets look at our views folder again. Open the layout.hbs file.
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>{{title}}</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+      </head>
+      <body>
+        {{{body}}}
+      </body>
+    </html>
+You can see 2 handlebars tags. One for `{{title}}` in the <title> tag and one for `{{{body}}}` in the body tag. Notice, the contents of index.hbs has populated the placeholder `{{{body}}}`.
+Also, notice that the body placeholder has 3 sets of braces {{{}}}, whereas the title only has 2 {{}}. This tells the handlebars whether to escape string or not. For the body, as we are inputting html, we mustn't escape the html tags. If you would like to see a visual representation of this, delete one set of braces around the body placeholder and rerun your node server.
