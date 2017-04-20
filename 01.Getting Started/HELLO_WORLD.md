@@ -1,17 +1,18 @@
 # Hello World Express App
 Create a folder for our application.
-mkdir app
+    mkdir app
 Enter that folder
-cd app
+    cd app
 Run the express command. This is important. You need to choose a template engine that you want to use. Express uses pug (previously known as jade) by default. However, I'm not a fan. I'll be using Handlebars.
 The reason for using Handlebars is that the syntax is uncomplicated and we are not wildly modifying the html which pug does do.
-express --hbs
-npm install
-npm start
+    express --hbs
+    npm install
+    npm start
 Go to your browser and type in the server IP address (localhost if its on your machine) followed by `:3000` which denotes the port number.
 The page should load with a Welcome to Express.
 Lets examine the Express Folder Structure
-ls -l
+    ls -l
+```
 -app.js
 -bin
 -node_modules
@@ -19,6 +20,7 @@ ls -l
 -public
 -routes
 -views
+```
 ## What is all of this?
 ### app.js
 This is the node.js application. Essentially, this is the JavaScript run on the server by the magical node.js.
