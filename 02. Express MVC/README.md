@@ -61,3 +61,10 @@ Person.prototype.sayMyName = function () {
 var person = new Person('Paris');
 person.sayMyName(); // prints Paris to the console. The method accesses the name property of the person object.
 ```
+# Checklist
+* ~~Understanding Routes~~
+* Restructure express for MVC
+* Understanding controllers
+* Understanding views
+
+Move on to MVC.md
