@@ -46,16 +46,17 @@ A method is part of an object. Similar to a function, it can take parameters and
 var sayName = function(name){
   console.log(name);
 };
+/* a function */
+sayName('Leo'); // This prints Leo to the console. The function uses the parameter passed to it.
+
 /* Person constructor uses a function */
 var Person = function(name){
   this.name = name;
 };
 /* Person method that prints the name property of the object */
-Person.prototypesayMyName = function () {
+Person.prototypesay.MyName = function () {
   console.log(this.name);
 };
-/* a function */
-sayName('Leo'); // This prints Leo to the console. The function uses the parameter passed to it.
 /* a method */
 var person = new Person('Paris');
 person.sayMyName(); // prints Paris to the console. The method accesses the name property of the person object.
