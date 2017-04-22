@@ -54,7 +54,7 @@ var Person = function(name){
   this.name = name;
 };
 /* Person method that prints the name property of the object */
-Person.prototypesay.MyName = function () {
+Person.prototype.sayMyName = function () {
   console.log(this.name);
 };
 /* a method */
