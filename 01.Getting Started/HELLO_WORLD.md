@@ -16,6 +16,11 @@ npm start
 ```
 Go to your browser and type in the server IP address (localhost if its on your machine) followed by `:3000` which denotes the port number.
 The page should load with a Welcome to Express.
+
+# Checklist
+* ~~Linux Server (We're using Ubuntu 16 LTS)~~
+* ~~Get a hello world express.js app running~~
+
 Lets examine the Express Folder Structure
 ```
 ls -l
@@ -97,3 +102,6 @@ Now rerun npm start and refresh your browser tab with the page open. You'll see 
 ```
 You can see 2 handlebars tags. One for `{{title}}` in the <title> tag and one for `{{{body}}}` in the body tag. Notice, the contents of index.hbs has populated the placeholder `{{{body}}}`.
 Also, notice that the body placeholder has 3 sets of braces {{{}}}, whereas the title only has 2 {{}}. This tells the handlebars whether to escape string or not. For the body, as we are inputting html, we mustn't escape the html tags. If you would like to see a visual representation of this, delete one set of braces around the body placeholder and rerun your node server.
+
+# What next?
+We've got our express app running, we now need to get it ready for a real MVC application with routes and controllers and views and all sorts. Move on to 02. Express MVC.
