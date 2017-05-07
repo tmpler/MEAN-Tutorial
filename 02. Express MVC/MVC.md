@@ -89,3 +89,59 @@ router.get('/', mainCtrl.index);
 
 module.exports = router;
 ```
+That should all be working now just fine.
+# Checklist
+* ~~Understanding Routes~~
+* ~~Restructure express for MVC~~
+* Understanding controllers
+* Understanding views
+
+## Understanding controllers
+Let's have a real look at the controller now to understand what it does.
+```javascript
+module.exports.index = function(req, res, next) {
+  res.render('index', { title: 'Hello World' });
+}
+```
+We can break this up into all of it's elements. We have:
+* The `module` object. Contained in here is the `exports` object.
+* We create/assign the `index()` method to `exports` with a function.
+* The function takes 3 parameters `req`, `res` and `next`.
+* `req` is the request object, `res` is the response object and `next` is the next middleware function.
+* The next middleware function can be used to execute code, modify the request and/or response objects, modify the req-response cycle or call other middleware functions.
+* Inside the function we run the `render()` method on the response object. The `render()` method takes a view as it's first parameter. We've sent it the index view.
+* The second parameter we have sent, which we modified earlier, is the `locals` object. We have set local data within the view.
+
+This is a very simple controller and we will return to controllers later. The best way to understand it, is to day we have created an index method for our main controller which will render the index view with the title set in the local data.
+
+# Checklist
+* ~~Understanding Routes~~
+* ~~Restructure express for MVC~~
+* ~~Understanding controllers~~
+* Understanding views
+
+## Understanding views
+We have already had a nice look at our views from where we modified them before. The view is simple our template that we use to render the page and we slot our data in where we want.
+```html
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+```
+This is very simple. As discussed earlier, our local's data which was set in our main controller's index method gives us the title.
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+</html>
+```
+Our layout can also access the locals data to set the title, but it also has the `{{{body}}}` tag to load in from the index view. Hopefully, this is easy enough to grasp after the edits we made earlier.
+# Checklist
+* ~~Understanding Routes~~
+* ~~Restructure express for MVC~~
+* ~~Understanding controllers~~
+* ~~Understanding views~~
