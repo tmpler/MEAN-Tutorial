@@ -145,3 +145,6 @@ Our layout can also access the locals data to set the title, but it also has the
 * ~~Restructure express for MVC~~
 * ~~Understanding controllers~~
 * ~~Understanding views~~
+
+## What next?
+Move on to static.md

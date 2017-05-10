@@ -1,3 +1,3 @@
 module.exports.index = function(req, res, next) {
-  res.render('index', { title: 'Hello World' });
+  res.render('index', { title: 'New\'s Feed' });
 }
