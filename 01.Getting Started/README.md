@@ -28,7 +28,7 @@ Download [Ubuntu 16.04 LTS Server](https://www.ubuntu.com/download/server) (Use 
 Set up new Linux Machine on VirtualBox, insert Virtual Disk and start box.
 Install Ubuntu Server Following installation prompt.
 Setup SSH for SFTP to put code on server over secure connection.
-`sudo apt-get install openssh-server`
+```sudo apt-get install openssh-server```
 
 ### C. Using Windows and Remote VM
 TODO: Make Guide More Detailed
@@ -45,14 +45,14 @@ For this project we will be using Node version 6.10.3. This is the latest stable
 
 # Install express
 When you have node installed you can start using npm (node package manager). 
-`npm install -g express`
+```npm install -g express```
 If you get errors try to `sudo` it.
-`sudo npm install -g express`
+```sudo npm install -g express```
 The `-g` installs it as a global module.
 
 # Install nodemon
 Nodemon is very useful as a development tool. Running a node application with nodemon will save you time having to rerun the server after every change as it listens for changes. As a bonus it will only rerun if it has to so any changes that don't require restarting the server won't.
-`npm install -g nodemon`
+```npm install -g nodemon```
 Again, use `sudo` if needed.
 
 # What Next?
