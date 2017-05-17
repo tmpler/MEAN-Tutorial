@@ -22,11 +22,18 @@ C. You are running Windows and you need to use a remote server.
 Fantastic. Move on
 
 ### B. Using Windows and a Local VM
-TODO: Make Guide More Detailed
 Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) if you haven't already.
 Download [Ubuntu 16.04 LTS Server](https://www.ubuntu.com/download/server) (Use another distro if you are comfortable troubleshooting it).
-Set up new Linux Machine on VirtualBox, insert Virtual Disk and start box.
-Install Ubuntu Server Following installation prompt.
+1. Open VirtualBox and select new
+2. Choose the correct type and version and name the machine
+3. Allocate memory. I recommend at least 2GB but more if you can
+4. Create virtual hard-disk now, vdi, dynamically allocated
+5. Set the size. The default is usually ok, but add more if you want
+6. Now the machine is created go to settings
+7. Go to storage and click the add optical drives button
+8. Find and select your ubuntu iso image
+9. Remove nay empty optical drives
+10. Run the machine and follow the instructions
 Setup SSH for SFTP to put code on server over secure connection.
 ```
   sudo apt-get install openssh-server
