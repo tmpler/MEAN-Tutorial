@@ -1,5 +1,5 @@
 # Introduction
-TODO: Introduction to what the project is
+In this project i will be guiding you through the process of building a Full-stack JavaScript web application. We will be building a social media website. Throughout this project I will explain key principles in the various technologies we will be using leaving nothing in the development process unexplained.
 
 # Assumed Knowledge
 * Intermediate JavaScript
@@ -40,13 +40,22 @@ If using Digital Ocean, great an Ubuntu 16.04 Droplet and follow the initial Ubu
 * Get a hello world express.js app running
 
 # Install Node
-TODO: Install node using NVM
+For this project we will be using Node version 6.10.3. This is the latest stable release at time of writing. You may intall node however you wish but I prefer to use NVM (Node.js Version manager). 
+[How To Install Node.js on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04#how-to-install-using-nvm)
+or if using Centos or similiar
+[How To Install Node.js on a CentOS 7 server](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
 
 # Install express
-TODO: Install express using NPM
+When you have node installed you can start using npm (node package manager). 
+`npm install -g express`
+If you get errors try to `sudo` it.
+`sudo npm install -g express`
+The `-g` installs it as a global module.
 
 # Install nodemon
-TODO: Install nodemon using NPM
+Nodemon is very useful as a development tool. Running a node application with nodemon will save you time having to rerun the server after every change as it listens for changes. As a bonus it will only rerun if it has to so any changes that don't require restarting the server won't.
+`npm install -g nodemon`
+Again, use `sudo` if needed.
 
 # What Next?
 Move on to HELLO_WORLD.MD
