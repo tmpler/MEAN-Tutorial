@@ -4,7 +4,6 @@ In this project i will be guiding you through the process of building a Full-sta
 # Assumed Knowledge
 * Intermediate JavaScript
 * Basic HTML, CSS
-*
 
 # Checklist
 * Linux Server (We're using Ubuntu 16 LTS)
