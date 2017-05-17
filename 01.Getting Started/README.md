@@ -1,5 +1,5 @@
 # Introduction
-In this project i will be guiding you through the process of building a Full-stack JavaScript web application. We will be building a social media website. Throughout this project I will explain key principles in the various technologies we will be using leaving nothing in the development process unexplained.
+In this project I will be guiding you through the process of building a Full-stack JavaScript web application. We will be building a social media website. Throughout this project I will explain key principles in the various technologies we will be using leaving nothing in the development process unexplained.
 
 # Assumed Knowledge
 * Intermediate JavaScript
@@ -23,16 +23,17 @@ Fantastic. Move on
 
 ### B. Using Windows and a Local VM
 TODO: Make Guide More Detailed
-Install Oracle VirtualBox if you haven't already.
-Download Ubuntu 16.04 LTS Server (Use another distro if you are comfortable troubleshooting it).
+Install [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) if you haven't already.
+Download [Ubuntu 16.04 LTS Server](https://www.ubuntu.com/download/server) (Use another distro if you are comfortable troubleshooting it).
 Set up new Linux Machine on VirtualBox, insert Virtual Disk and start box.
 Install Ubuntu Server Following installation prompt.
 Setup SSH for SFTP to put code on server over secure connection.
+`sudo apt-get install openssh-server`
 
 ### C. Using Windows and Remote VM
 TODO: Make Guide More Detailed
 Setting Up a remote server. Use AWS for a free server with minimum specifications or use [digital ocean and get $10 free credit with my referral link](https://m.do.co/c/fbefaeb56055)
-If using Digital Ocean, great an Ubuntu 16.04 Droplet and follow the initial Ubuntu Setup Guide. When you have finished you will have SSH access and Putty.
+If using Digital Ocean, create an Ubuntu 16.04 Droplet and follow the [initial Ubuntu Setup Guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04). When you have finished you will have SSH access and Putty.
 
 # Checklist
 * ~~Linux Server (We're using Ubuntu 16 LTS)~~
@@ -41,8 +42,6 @@ If using Digital Ocean, great an Ubuntu 16.04 Droplet and follow the initial Ubu
 # Install Node
 For this project we will be using Node version 6.10.3. This is the latest stable release at time of writing. You may intall node however you wish but I prefer to use NVM (Node.js Version manager). 
 [How To Install Node.js on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-16-04#how-to-install-using-nvm)
-or if using Centos or similiar
-[How To Install Node.js on a CentOS 7 server](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server)
 
 # Install express
 When you have node installed you can start using npm (node package manager). 
