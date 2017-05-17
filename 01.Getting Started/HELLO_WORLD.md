@@ -7,14 +7,14 @@ Enter that folder
 ```
 cd app
 ```
-Run the express command. This is important. You need to choose a template engine that you want to use. Express uses pug (previously known as jade) by default. However, I'm not a fan. I'll be using Handlebars.
-The reason for using Handlebars is that the syntax is uncomplicated and we are not wildly modifying the html which pug does do.
+Run the express command. This is important. You need to choose a template engine that you want to use. Express uses pug (previously known as jade) by default. However, I'm not a fan as I find pug syntax makes it harder to spot errors. I'll be using Handlebars.
+The reason for using Handlebars is that the syntax is uncomplicated and we are not wildly modifying the html, which pug does do.
 ```
 express --hbs
 npm install
 npm start
 ```
-Go to your browser and type in the server IP address (localhost if its on your machine) followed by `:3000` which denotes the port number.
+Go to your browser and type in the server IP address (localhost if its on your machine) followed by `:3000` which denotes the port number. To find the IP address of your server use `ifconfig` and check your network devices.
 The page should load with a Welcome to Express.
 
 # Checklist
